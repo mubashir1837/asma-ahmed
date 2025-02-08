@@ -16,8 +16,8 @@ const AboutMe = () => {
                     <circle cx="512" cy="512" r="512" fill="url(#gradient)" fillOpacity="0.7" />
                     <defs>
                         <radialGradient id="gradient" cx="512" cy="512" r="512" gradientUnits="userSpaceOnUse">
-                            <stop stopColor="#7775D6" />
-                            <stop offset="1" stopColor="#E935C1" />
+                            <stop stopColor="#fcd6a9" />
+                            <stop offset="1" stopColor="#fcd6a9" />
                         </radialGradient>
                     </defs>
                 </svg>

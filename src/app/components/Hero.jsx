@@ -12,10 +12,10 @@ const Hero = () => {
     <div id='home' className=" bg-gradient-to-b from-yellow-200 to-orange-500  flex flex-col items-center justify-center  py-24 relative">
       {/* Social Links */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        className="col-span-8 place-self-center text-start sm:text-top justify-self-start text-black"
+        initial={{ y: -50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.3, ease: "linear" }}
+        className="col-span-8 text-black"
       >
         <div className="absolute left-2 top-[10%] lg:top-[60%] md:left-6 lg:left-8 transform md:-translate-y-1/2">
           <ul className="space-y-4  p-2 rounded-full">
