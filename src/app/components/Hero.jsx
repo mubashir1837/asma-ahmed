@@ -15,7 +15,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+        className="col-span-8 place-self-center text-start sm:text-top justify-self-start text-black"
       >
         <div className="absolute left-2 top-[10%] lg:top-[60%] md:left-6 lg:left-8 transform md:-translate-y-1/2">
           <ul className="space-y-4  p-2 rounded-full">
@@ -93,7 +93,7 @@ const Hero = () => {
               Hire Me
             </Link>
             <Link
-              href="https://heyzine.com/flip-book/a221b3d899.html"
+              href="/asma.pdf" download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#090d82] to-secondary-500  text-white mt-3"
             >
               <span className="block bg-gradient-to-br from-[#090d82] to-secondary-500 font-bold rounded-full px-5 py-2">

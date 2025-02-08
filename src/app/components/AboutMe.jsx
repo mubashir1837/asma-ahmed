@@ -22,7 +22,7 @@ const AboutMe = () => {
                     </defs>
                 </svg>
             )}
-            <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
+            <div className="mx-auto max-w-6xl text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">About me</h2>
                 <p className="mt-8 text-lg leading-8 text-gray-900">
                     I am Asma Ahmed, a passionate and dedicated bioinformatician with a strong foundation in computational biology, cancer genomics, and artificial intelligence. I thrive in dynamic environments where I can apply my creativity, critical thinking, and technical skills to solve real-world problems. I am confident in my ability to adapt to changing priorities while maintaining a positive attitude and delivering innovative solutions.
