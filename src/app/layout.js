@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <link rel="icon" href="./asma.jpg" type="image/png" className="rounded-full" />
+        <link rel="icon" href="/asmaa.png" type="image/png" className="rounded-full" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

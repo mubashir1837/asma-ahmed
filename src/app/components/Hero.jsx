@@ -76,7 +76,7 @@ const Hero = () => {
             />
           </h1>
           <p className="text-[#1d1e1f] text-base sm:text-sm mb-6 py-4 lg:text-xl">
-          A passionate teacher, creative graphic designer, and dedicated freelancer from Pakistan.
+          A skilled Bioinformatics student and AI enthusiast with a passion for data analysis and programming, from Pakistan. 
           </p>
           <div>
             <Link
