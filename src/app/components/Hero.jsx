@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="absolute left-2 top-[10%] lg:top-[60%] md:left-6 lg:left-8 transform md:-translate-y-1/2">
           <ul className="space-y-4  p-2 rounded-full">
             <li>
-              <a href="" className="text-green-600">
+              <a href="http://Wa.me/+923335312126" className="text-green-600">
                 <FaWhatsapp size={30} />
               </a>
             </li>
