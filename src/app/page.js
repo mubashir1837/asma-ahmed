@@ -6,7 +6,7 @@ import Skills3D from "./components/Skills3D";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-yellow-200 to-orange-500">
      <Navbar />
      <Hero />
      <AboutMe />

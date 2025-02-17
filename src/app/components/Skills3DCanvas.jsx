@@ -13,23 +13,22 @@ const Skills3DCanvas = () => {
     const camera = new THREE.PerspectiveCamera(75, mount.clientWidth / mount.clientHeight, 0.1, 1000);
     camera.position.z = 5;
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(mount.clientWidth, mount.clientHeight);
     mount.appendChild(renderer.domElement);
 
-    // Ambient Light
+    // Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
 
-    // Directional Light
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     directionalLight.position.set(2, 2, 2);
     scene.add(directionalLight);
 
-    // Sphere Geometry and Material
+    // Sphere Geometry
     const geometry = new THREE.SphereGeometry(1, 100, 200);
     const material = new THREE.MeshStandardMaterial({
-      color: "#4ade80",
+      color: "#11111",
       metalness: 0.5,
       roughness: 0.5,
     });
@@ -45,9 +44,18 @@ const Skills3DCanvas = () => {
     };
     animate();
 
-    // Cleanup
+    // Resize Handling
+    const handleResize = () => {
+      camera.aspect = mount.clientWidth / mount.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(mount.clientWidth, mount.clientHeight);
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on Unmount
     return () => {
       mount.removeChild(renderer.domElement);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
